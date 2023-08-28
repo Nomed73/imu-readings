@@ -1,0 +1,167 @@
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+@font-face {
+	font-family: 'Atkinson Hyperlegible';
+	src: url('/src/assets/fonts/atkinson-hyperlegible/Atkinson-Hyperlegible-Regular-102.otf') format('opentype');
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Atkinson Hyperlegible';
+	src: url('/src/assets/fonts/atkinson-hyperlegible/Atkinson-Hyperlegible-Bold-102.otf') format('opentype');
+	font-weight: bold;
+}
+@font-face {
+	font-family: 'Atkinson Hyperlegible';
+	src: url('/src/assets/fonts/atkinson-hyperlegible/Atkinson-Hyperlegible-Italic-102.otf') format('opentype');
+	font-style: italic;
+}
+@font-face {
+	font-family: 'Atkinson Hyperlegible';
+	src: url('/src/assets/fonts/atkinson-hyperlegible/Atkinson-Hyperlegible-BoldItalic-102.otf') format('opentype');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Saira';
+	src: url('/src/assets/fonts/Saira/Saira-Thin.ttf') format('truetype');
+	font-style: normal;
+	font-weight: 100;
+}
+@font-face {
+	font-family: 'Saira';
+	src: url('/src/assets/fonts/Saira/Saira-ThinItalic.ttf') format('truetype');
+	font-style: italic;
+	font-weight: 100;
+}
+@font-face {
+	font-family: 'Saira';
+	src: url('/src/assets/fonts/Saira/Saira-ExtraLight.ttf') format('truetype');
+	font-style: normal;
+	font-weight: 200;
+}
+@font-face {
+	font-family: 'Saira';
+	src: url('/src/assets/fonts/Saira/Saira-ExtraLightItalic.ttf') format('truetype');
+	font-style: italic;
+	font-weight: 200;
+}
+@font-face {
+	font-family: 'Saira';
+	src:  url('/src/assets/fonts/Saira/Saira-Light.ttf') format('truetype');
+	font-style: normal;
+	font-weight: 300;
+}
+@font-face {
+	font-family: 'Saira';
+	src: url('/src/assets/fonts/Saira/Saira-LightItalic.ttf') format('truetype');
+	font-style: italic;
+	font-weight: 300;
+}
+@font-face {
+	font-family: 'Saira';
+	src: url('/src/assets/fonts/Saira/Saira-Regular.ttf') format('truetype');
+	font-style: normal;
+	font-weight: 400;
+}
+@font-face {
+	font-family: 'Saira';
+	src: url('/src/assets/fonts/Saira/Saira-Italic.ttf') format('truetype');
+	font-style: italic;
+	font-weight: 400;
+}
+@font-face {
+	font-family: 'Saira';
+	src: url('/src/assets/fonts/Saira/Saira-Medium.ttf') format('truetype');
+	font-style: normal;
+	font-weight: 500;
+}
+@font-face {
+	font-family: 'Saira';
+	src: url('/src/assets/fonts/Saira/Saira-MediumItalic.ttf') format('truetype');
+	font-style: italic;
+	font-weight: 500;
+}
+@font-face {
+	font-family: 'Saira';
+	src: url('/src/assets/fonts/Saira/Saira-SemiBold.ttf') format('truetype');
+	font-style: normal;
+	font-weight: 600;
+}
+@font-face {
+	font-family: 'Saira';
+	src: url('/src/assets/fonts/Saira/Saira-SemiBoldItalic.ttf') format('truetype');
+	font-style: italic;
+	font-weight: 600;
+}
+@font-face {
+	font-family: 'Saira';
+	src: url('/src/assets/fonts/Saira/Saira-Bold.ttf') format('truetype');
+	font-style: normal;
+	font-weight: 700;
+}
+@font-face {
+	font-family: 'Saira';
+	src: url('/src/assets/fonts/Saira/Saira-BoldItalic.ttf') format('truetype');
+	font-style: italic;
+	font-weight: 700;
+}
+@font-face {
+	font-family: 'Saira';
+	src: url('/src/assets/fonts/Saira/Saira-ExtraBold.ttf') format('truetype');
+	font-style: normal;
+	font-weight: 800;
+}
+@font-face {
+	font-family: 'Saira';
+	src: url('/src/assets/fonts/Saira/Saira-ExtraBoldItalic.ttf') format('truetype');
+	font-style: italic;
+	font-weight: 800;
+}
+@font-face {
+	font-family: 'Saira';
+	src: url('/src/assets/fonts/Saira/Saira-Black.ttf') format('truetype');
+	font-style: normal;
+	font-weight: 900;
+}
+@font-face {
+	font-family: 'Saira';
+	src: url('/src/assets/fonts/Saira/Saira-BlackItalic.ttf') format('truetype');
+	font-style: italic;
+	font-weight: 900;
+}
+
+p {
+  font-family: 'Saira';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: $white;
+}
+
+h2 {
+  font-family: 'Saira';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  color: $white;
+}
+
+h3 {
+  font-family: 'Saira';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  color: $white;
+}
+
+span {
+  font-family: 'Saira';
+}
+
+li {
+  font-family: 'Saira';
+}

@@ -1,0 +1,41 @@
+
+@import "./dwHeader";
+
+
+.widget-grid-item {
+  position: relative;
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+  padding: 1px;
+  cursor: grab;
+}
+
+.widget-grid-item:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  //background: $info;
+  background: rgba(0, 0, 0, 0.8);
+  border-color: #ffffff;
+  border-radius: 10px;
+  border-width: 1px;
+  border-style: solid;
+  //clip-path: polygon(0 0, 100% 0, 100% calc(100% - 12.00px), calc(100% - 12.00px) 100%, 0 100%, 0 0, 10px 10px, 10px calc(100% - 10px), calc(100% - 20.00px - 4.14px) calc(100% - 10px), calc(100% - 10px) calc(100% - 20.00px - 4.14px), calc(100% - 10px) 10px, 10px 10px);
+}
+
+.dynamic-widget {
+  position: relative;
+  height: 100%;
+  z-index: 0;
+}
+
+.dynamic-widget:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  //background: $black;
+  //clip-path: polygon(0 0, 100% 0, 100% calc(100% - 12.00px), calc(100% - 12.00px) 100%, 0 100%);
+}

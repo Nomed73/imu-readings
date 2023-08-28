@@ -1,0 +1,51 @@
+i.mti {
+  width: 60%;
+  height: 60%;
+  background: no-repeat center;
+  background-size: contain;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+  mask-position: center;
+  mask-size: contain;
+}
+
+i.mti.mti-menu-dot {
+  mask-image: url('src/assets/icons/mti/menu-dot.svg');
+}
+
+i.mti.mti-menu-dot-2 {
+  width: 18px;
+  height: 4px;
+  mask-image: url('src/assets/icons/mti/menu-dot-2.svg');
+}
+
+i.mti.mti-speed {
+  mask-image: url('src/assets/icons/mti/speed.svg');
+}
+
+i.mti.mti-run-time {
+  mask-image: url('src/assets/icons/mti/run-time.svg');
+}
+
+i.mti.mti-color-black {
+  background-color: $black;
+}
+i.mti.mti-color-white {
+  background-color: $white;
+}
+i.mti.mti-color-gray {
+  background-color: $info;
+}
+i.mti.mti-color-orange {
+  background-color: $danger;
+}
+i.mti.mti-color-yellow {
+  background-color: $warning;
+}
+i.mti.mti-color-green {
+  background-color: $success;
+}
+i.mti.mti-color-primary {
+  background-color: $primary;
+}
