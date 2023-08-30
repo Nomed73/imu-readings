@@ -6,7 +6,10 @@ import ThreeJSComponent from './ThreeJS/ThreeJSComponent';
 // import BasicScene from './ThreeJS/Ch02/BasicScene';
 // import IMUSatellite from './ThreeJS/Ex01/components/IMUStatellite';
 import TimeGraphs from './TimeGraphs/TimeGraphs';
-import Sample from './TimeGraphs/Sample';
+// import Sample from './TimeGraphs/Sample';
+import TimeGraphsAlllAxes from './TimeGraphs/TimeGraphsAllAxes';
+import TimeGraphsDataFromJS from './TimeGraphs/TimeGraphsDataFromJS'
+import SatellitePath from './TimeGraphs/SatellitePath';
 
 const Dev = () => {
   return (
@@ -16,7 +19,10 @@ const Dev = () => {
           {/* <IMUSatellite/> */}
           {/* <ThreeJSComponent/> */}
           {/* <TimeGraphs/> */}
-          <Sample/>
+          {/* <TimeGraphsAlllAxes/> */}
+          {/* <TimeGraphsDataFromJS/> */}
+          {/* <Sample/> */}
+          <SatellitePath/>
         </div> 
     </div>
   );

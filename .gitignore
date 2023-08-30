@@ -65,3 +65,5 @@ yarn-error.log
 #ignored files
 *.csv
 *.json
+Data
+src/Data
