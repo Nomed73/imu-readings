@@ -5,7 +5,7 @@ import GUI from 'lil-gui';
 import {PositionGraph} from './PositionGraph';
 import dataPoints from '../../Data/data.json';
 import axios from 'axios';
-import { CreateScene } from './CreateScene';
+import { CreateScene } from './EarthAndSatellite/CreateSpaceScene';
 
 //change name to the name of the file Template = file name
 const TimeGraphs = () => {
