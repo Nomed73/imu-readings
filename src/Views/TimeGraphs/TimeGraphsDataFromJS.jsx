@@ -5,7 +5,7 @@ import GUI from 'lil-gui';
 import {PositionGraph} from './PositionGraph';
 import dataPoints from '../../Data/data.json';
 import axios from 'axios';
-import { CreateScene } from './CreateScene';
+import { CreateScene } from './EarthAndSatellite/CreateSpaceScene';
 import {data} from '../../Data/csvjsonA';
 
 //change name to the name of the file Template = file_name
