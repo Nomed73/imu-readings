@@ -17,17 +17,17 @@ export function createSatellite(scene){
   return satellite;
 }
 
-//Satellite: Satellite roation
+//Satellite: Satellite rotation
 export function moveSatellite(i, satellite, scene){
     if (i < d.length){
-        d[i]["Pos_x[m]"] = d[i]["Pos_x[m]"] / 1000;
-        d[i]["Pos_y[m]"] = d[i]["Pos_y[m]"] / 1000;
-        d[i]["Pos_z[m]"] = d[i]["Pos_z[m]"] / 1000;
+        const pos_x = d[i]["Pos_x[m]"] / 1000;
+        const pos_y = d[i]["Pos_y[m]"] / 1000;
+        const  pos_z = d[i]["Pos_z[m]"] / 1000;
         if (i == 0){
-            satellite.position.set(d[i]["Pos_x[m]"], d[i]["Pos_y[m]"], d[i]["Pos_z[m]"]);
+            satellite.position.set(pos_x, pos_y, pos_z);
             scene.add(satellite)
         } else {
-            satellite.position.set(d[i]["Pos_x[m]"], d[i]["Pos_y[m]"], d[i]["Pos_z[m]"]);
+            satellite.position.set(pos_x, pos_y, pos_z);
         }
     }
 }

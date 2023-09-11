@@ -36,7 +36,7 @@ const AnimateSatellite = () => {
     //Timer for animation
     let clock = new THREE.Clock();
     let delta = 0;
-    let interval = 1/60;
+    let interval = 1/120;
     let i = 0;
 
     const animate = () => {
@@ -47,7 +47,10 @@ const AnimateSatellite = () => {
         moveSatellite(i, satellite, scene);
         renderer.render(scene, camera);
         delta = delta % interval;
-        i+=100;
+        i+=120;
+        if (i >= data.length) {
+          i = 0;
+        }
       }
     }
       

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Two Cubes with Different Cameras</title>
+    <style>
+        body {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script>
+
+        // Create a scene
+        const scene = new THREE.Scene();
+
+        // Create multiple cameras, one for each view
+        const perspectiveCamera = new THREE.PerspectiveCamera(75, window.innerWidth / 2 / window.innerHeight, 0.1, 1000);
+        perspectiveCamera.position.z = 5;
+
+        const orthographicCamera = new THREE.OrthographicCamera(-2, 2, 2, -2, 0.1, 1000);
+        orthographicCamera.position.z = 5;
+
+        // Create a renderer
+        const renderer = new THREE.WebGLRenderer();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        document.body.appendChild(renderer.domElement);
+
+        // Add objects to the scene with different materials
+        const geometry = new THREE.BoxGeometry();
+        const material1 = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
+        const material2 = new THREE.MeshBasicMaterial({ color: 0xff0000 });
+
+        const cube1 = new THREE.Mesh(geometry, material1);
+        const cube2 = new THREE.Mesh(geometry, material2);
+
+        scene.add(cube1, cube2);
+
+        // Adjust the positions of the cubes
+        cube1.position.x = -1;
+        cube2.position.x = 1;
+
+        // Update the render loop to switch cameras and render
+        let usePerspectiveCamera = true;
+
+        function animate() {
+            requestAnimationFrame(animate);
+
+            if (usePerspectiveCamera) {
+                renderer.setViewport(0, 0, window.innerWidth / 2, window.innerHeight);
+                renderer.setScissor(0, 0, window.innerWidth / 2, window.innerHeight);
+                renderer.render(scene, perspectiveCamera);
+            } else {
+                renderer.setViewport(window.innerWidth / 2, 0, window.innerWidth / 2, window.innerHeight);
+                renderer.setScissor(window.innerWidth / 2, 0, window.innerWidth / 2, window.innerHeight);
+                renderer.render(scene, orthographicCamera);
+            }
+
+            usePerspectiveCamera = !usePerspectiveCamera;
+        }
+
+        animate();
+    </script>
+</body>
+</html>
